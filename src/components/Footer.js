@@ -4,7 +4,7 @@ class Footer extends Component {
     render() {
         return <footer>
             <div className="container">
-                <a href="index.html" className="logo"><img src="images/logo/logo.png" alt="Logo" /></a>
+                <a href="index.html" className="logo"><img src="/assets/images/logo/logo.png" alt="Logo" /></a>
 
                 <ul>
                     <li><a href="#" className="tran3s round-border"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>

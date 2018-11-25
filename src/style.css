@@ -138,11 +138,25 @@ animation-delay: .8s;
   top: 10px;
   z-index: 999;
   text-align: right;
+  width: 100%;
 }
 
 .navbar-expand-md.navbar-toggler {
   margin-left: auto;
 }
+
+.navbar-brand img {
+  width: 150px !important;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
  h1,h2,h3,h4,h5,h6,p,ul { margin:0;padding: 0;}
  h1,h2,h3,h4,h5,h6 {color:#292929; text-transform: uppercase;font-weight: 700;}
  h1 {font-size: 48px;}
@@ -1585,4 +1599,22 @@ footer p {
 }
 .blog-details-post-wrapper .post-comment form button:hover {
   background:#fff;
+}
+
+.carousel-status {
+  display: none;
+}
+
+.carousel-slider {
+  height: -webkit-fill-available;
+}
+
+.mix {
+  width: 310px;
+  padding: 5px;
+  display: inline-block;
+}
+
+footer img {
+  width: 100px;
 }

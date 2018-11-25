@@ -4,7 +4,7 @@ import {
     Collapse,
     Navbar,
     NavbarToggler,
-    //NavbarBrand,
+    NavbarBrand,
     Nav,
     NavItem,
     NavLink
@@ -29,8 +29,10 @@ class Header extends Component {
         return (
             <div className="headerContainer">
                 <Navbar dark expand="md">
+                    <NavbarBrand href="/" className="active">
+                        <img src="/assets/images/logo/logo.png" style={{width:100, marginTop: -7}} />   
+                    </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
-                    {/*<NavbarBrand href="/" className="active">here should be app logo</NavbarBrand>*/}
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>

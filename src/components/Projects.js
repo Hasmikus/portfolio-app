@@ -12,23 +12,91 @@ class Projects extends Component {
 
 					<div className="project-menu">
 						<ul>
-	        				<li className="filter active tran3s" data-filter="all">All</li>
-							<li className="filter tran3s" data-filter=".web">Web Design</li>
-							<li className="filter tran3s" data-filter=".photo">Photography</li>
-							<li className="filter tran3s" data-filter=".webd">Web Development</li>
-							<li className="filter tran3s" data-filter=".om">Online Marketing</li>
-							<li className="filter tran3s" data-filter=".dmedia">Digital Media</li>
-							<li className="filter tran3s" data-filter=".support">Support</li>
+	        				<li className="filter active tran3s">All</li>
+							<li className="filter tran3s">Web Design</li>
+							<li className="filter tran3s">Photography</li>
+							<li className="filter tran3s">Web Development</li>
+							<li className="filter tran3s">Online Marketing</li>
+							<li className="filter tran3s">Digital Media</li>
+							<li className="filter tran3s">Support</li>
 	        			</ul>
 					</div>
 
 					<div className="project-gallery clear-fix">
-						<div className="mix grid-item photo om dmedia">
+						<div className="mix">
 							<div className="single-img">
-								<img src="assets/images/project/1.jpg" alt="Image" />
+								<img src="/assets/images/project/1.jpg" alt="Image" />
 								<div className="opacity">
 									<div className="border-shape"><div><div>
-										<h6><a href="#">Sweet Photo</a></h6>
+										<h6><a href="#">Project Details</a></h6>
+										<ul>
+											<li>Presentational web pages</li>
+											<li>Bots /</li>
+											<li>Admin Apps /</li>
+											<li>Card Web Pages</li>
+										</ul></div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div className="mix">
+							<div className="single-img">
+								<img src="/assets/images/project/2.jpg" alt="Image" />
+								<div className="opacity">
+									<div className="border-shape"><div><div>
+										<h6><a href="#">Project Details</a></h6>
+										<ul>
+											<li>Presentational web pages</li>
+											<li>Bots /</li>
+											<li>Admin Apps /</li>
+											<li>Card Web Pages</li>
+										</ul></div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div className="mix">
+							<div className="single-img">
+								<img src="/assets/images/project/3.jpg" alt="Image" />
+								<div className="opacity">
+									<div className="border-shape"><div><div>
+										<h6><a href="#">Project Details</a></h6>
+										<ul>
+											<li>Presentational web pages</li>
+											<li>Bots /</li>
+											<li>Admin Apps /</li>
+											<li>Card Web Pages</li>
+										</ul></div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div className="mix">
+							<div className="single-img">
+								<img src="/assets/images/project/4.png" alt="Image" />
+								<div className="opacity">
+									<div className="border-shape"><div><div>
+										<h6><a href="#">Project Details</a></h6>
+										<ul>
+											<li>Presentational web pages</li>
+											<li>Bots /</li>
+											<li>Admin Apps /</li>
+											<li>Card Web Pages</li>
+										</ul></div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						{/* <div className="mix">
+							<div className="single-img">
+								<img src="/assets/images/project/5.png" alt="Image" />
+								<div className="opacity">
+									<div className="border-shape"><div><div>
+										<h6><a href="#">Project Details</a></h6>
 										<ul>
 											<li>Business /</li>
 											<li>Service /</li>
@@ -38,87 +106,20 @@ class Projects extends Component {
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 
-						<div className="mix grid-item web webd dmedia support">
+						<div className="mix">
 							<div className="single-img">
-								<img src="assets/images/project/2.jpg" alt="Image" />
+								<img src="/assets/images/project/6.png" alt="Image" />
 								<div className="opacity">
 									<div className="border-shape"><div><div>
-										<h6><a href="#">Sweet Photo</a></h6>
+										<h6><a href="#">Project Details</a></h6>
 										<ul>
-											<li>Business /</li>
-											<li>Service /</li>
-											<li>Product /</li>
-											<li>Template</li>
-										</ul></div></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="mix grid-item photo webd support">
-							<div className="single-img">
-								<img src="assets/images/project/3.jpg" alt="Image" />
-								<div className="opacity">
-									<div className="border-shape"><div><div>
-										<h6><a href="#">Sweet Photo</a></h6>
-										<ul>
-											<li>Business /</li>
-											<li>Service /</li>
-											<li>Product /</li>
-											<li>Template</li>
-										</ul></div></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="mix grid-item web om">
-							<div className="single-img">
-								<img src="assets/images/project/4.jpg" alt="Image" />
-								<div className="opacity">
-									<div className="border-shape"><div><div>
-										<h6><a href="#">Sweet Photo</a></h6>
-										<ul>
-											<li>Business /</li>
-											<li>Service /</li>
-											<li>Product /</li>
-											<li>Template</li>
-										</ul></div></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="mix grid-item photo webd dmedia om">
-							<div className="single-img">
-								<img src="assets/images/project/5.jpg" alt="Image" />
-								<div className="opacity">
-									<div className="border-shape"><div><div>
-										<h6><a href="#">Sweet Photo</a></h6>
-										<ul>
-											<li>Business /</li>
-											<li>Service /</li>
-											<li>Product /</li>
-											<li>Template</li>
-										</ul></div></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="mix grid-item web webd dmedia om">
-							<div className="single-img">
-								<img src="assets/images/project/6.jpg" alt="Image" />
-								<div className="opacity">
-									<div className="border-shape"><div><div>
-										<h6><a href="#">Sweet Photo</a></h6>
-										<ul>
-											<li>Business /</li>
-											<li>Service /</li>
-											<li>Product /</li>
-											<li>Template</li>
+											<li>Extensions /</li>
+											<li>Presentational web pages</li>
+											<li>Bots /</li>
+											<li>Admin Apps /</li>
+											<li>Card Web Pages</li>
 										</ul></div></div>
 									</div>
 								</div>
