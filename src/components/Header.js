@@ -28,7 +28,7 @@ class Header extends Component {
     render() {
         return (
             <div className="headerContainer">
-                <Navbar dark expand="md">
+                <Navbar dark fixed expand="md">
                     <NavbarBrand href="/" className="active">
                         <img src="/assets/images/logo/logo.png" style={{width:100, marginTop: -7}} />   
                     </NavbarBrand>

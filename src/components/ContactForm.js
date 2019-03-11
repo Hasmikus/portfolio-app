@@ -4,7 +4,7 @@ import { Form, FormGroup, Input, Button } from 'reactstrap';
 class ContactForm extends Component {
     render() {
         return (
-            <div className="send-message">
+            <div className="send-message" id="send-message">
                 <h2>Send Message</h2>
                 <Form className="form-validation">
                     <FormGroup>

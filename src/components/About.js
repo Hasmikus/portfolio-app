@@ -15,8 +15,8 @@ class About extends Component {
 						<Col lg="3" md="3" sm="6">
 							<div className="single-about-content">
 								<div className="icon round-border tran3s">
-									<i className="fa fa-pencil-square-o" aria-hidden="true"></i>								</div>
-								<h5><a href="#" className="tran3s">Web Development</a></h5>
+									<i className="fa fa-desktop" aria-hidden="true"></i>								</div>
+								<h5><a href="#" className="tran3s">Web</a></h5>
 								<p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 								<a href="#" className="more tran3s hvr-bounce-to-right">More Details</a>
 							</div>
@@ -25,9 +25,9 @@ class About extends Component {
 						<Col lg="3" md="3" sm="6">
 							<div className="single-about-content">
 								<div className="icon round-border tran3s">
-									<i className="fa fa-camera" aria-hidden="true"></i>
+									<i className="fas fa-mobile-alt" />
 								</div>
-								<h5><a href="#" className="tran3s">PHOTOGRAPHY</a></h5>
+								<h5><a href="#" className="tran3s">Mobile</a></h5>
 								<p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 								<a href="#" className="more tran3s hvr-bounce-to-right">More Details</a>
 							</div>
@@ -36,9 +36,9 @@ class About extends Component {
 						<Col lg="3" md="3" sm="6">
 							<div className="single-about-content">
 								<div className="icon round-border tran3s">
-									<i className="fa fa-life-ring" aria-hidden="true"></i>
+									<i className="fas fa-robot" aria-hidden="true"></i>
 								</div>
-								<h5><a href="#" className="tran3s">Digital Media</a></h5>
+								<h5><a href="#" className="tran3s">Bots</a></h5>
 								<p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 								<a href="#" className="more tran3s hvr-bounce-to-right">More Details</a>
 							</div>
@@ -49,7 +49,7 @@ class About extends Component {
 								<div className="icon round-border tran3s">
 									<i className="fa fa-line-chart" aria-hidden="true"></i>
 								</div>
-								<h5><a href="#" className="tran3s">Online Marketing</a></h5>
+								<h5><a href="#" className="tran3s">SEO</a></h5>
 								<p>Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 								<a href="#" className="more tran3s hvr-bounce-to-right">More Details</a>
 							</div>

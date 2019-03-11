@@ -1,6 +1,75 @@
 import React, { Component } from 'react';
+import Gallery from 'react-photo-gallery';
+import Lightbox from 'react-images';
 
+const projects = {
+	web: [
+		{ src: "/assets/images/project/1.jpg", width: 4, height: 3 },
+		{ src: "/assets/images/project/2.jpg", width: 4, height: 3},
+		{ src: "/assets/images/project/3.jpg", width: 4, height: 3 },
+		{ src: "/assets/images/project/4.png", width: 4, height: 3 }
+	],
+	mobile: [
+		{ src: "/assets/images/project/5.png", width: 4, height: 3 },
+		{ src: "/assets/images/project/6.png", width: 4, height: 3}
+	],
+	bots: [
+		{ src: "/assets/images/project/7.jpg", width: 4, height: 3}
+	],
+	hibryd: [
+
+	]
+}
 class Projects extends Component {
+	state = {
+		currentImage: 0,
+		selectedSection: 'all'
+	};
+
+	openLightbox = (e, obj) => {
+		this.setState({
+			currentImage: obj.index,
+			lightboxIsOpen: true,
+		});
+	};
+
+	closeLightbox = () => {
+		this.setState({
+			currentImage: 0,
+			lightboxIsOpen: false,
+		});
+	};
+
+	gotoPrevious = () => {
+		this.setState({
+			currentImage: this.state.currentImage - 1,
+		});
+	};
+
+	gotoNext = () => {
+		this.setState({
+			currentImage: this.state.currentImage + 1,
+		});
+	};
+
+	onSectionChange = (section) => () => {
+		this.setState({
+			selectedSection: section
+		});
+	};
+
+	getProjectsPictures() {
+		let projectScrnshots = [];
+		if (this.state.selectedSection === 'all') {
+			Object.keys(projects).forEach(section => {
+				projectScrnshots = [ ...projects[section], ...projectScrnshots];
+			});
+		} else {
+			projectScrnshots = projects[this.state.selectedSection];
+		}
+		return projectScrnshots;
+	}
+
     render() {
         return (
 			<div id="project-section">
@@ -12,121 +81,21 @@ class Projects extends Component {
 
 					<div className="project-menu">
 						<ul>
-	        				<li className="filter active tran3s">All</li>
-							<li className="filter tran3s">Web Design</li>
-							<li className="filter tran3s">Photography</li>
-							<li className="filter tran3s">Web Development</li>
-							<li className="filter tran3s">Online Marketing</li>
-							<li className="filter tran3s">Digital Media</li>
-							<li className="filter tran3s">Support</li>
+							<li className="filter tran3s active" onClick={this.onSectionChange('all')}>All</li>
+							<li className="filter tran3s" onClick={this.onSectionChange('web')}>Web Development</li>
+							<li className="filter tran3s" onClick={this.onSectionChange('mobile')}>Mobile Development</li>
+							<li className="filter tran3s" onClick={this.onSectionChange('bots')}>Bots</li>
+							<li className="filter tran3s" onClick={this.onSectionChange('hibryd')}>Hibryd Applications</li>
 	        			</ul>
 					</div>
 
-					<div className="project-gallery clear-fix">
-						<div className="mix">
-							<div className="single-img">
-								<img src="/assets/images/project/1.jpg" alt="Image" />
-								<div className="opacity">
-									<div className="border-shape"><div><div>
-										<h6><a href="#">Project Details</a></h6>
-										<ul>
-											<li>Presentational web pages</li>
-											<li>Bots /</li>
-											<li>Admin Apps /</li>
-											<li>Card Web Pages</li>
-										</ul></div></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="mix">
-							<div className="single-img">
-								<img src="/assets/images/project/2.jpg" alt="Image" />
-								<div className="opacity">
-									<div className="border-shape"><div><div>
-										<h6><a href="#">Project Details</a></h6>
-										<ul>
-											<li>Presentational web pages</li>
-											<li>Bots /</li>
-											<li>Admin Apps /</li>
-											<li>Card Web Pages</li>
-										</ul></div></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="mix">
-							<div className="single-img">
-								<img src="/assets/images/project/3.jpg" alt="Image" />
-								<div className="opacity">
-									<div className="border-shape"><div><div>
-										<h6><a href="#">Project Details</a></h6>
-										<ul>
-											<li>Presentational web pages</li>
-											<li>Bots /</li>
-											<li>Admin Apps /</li>
-											<li>Card Web Pages</li>
-										</ul></div></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div className="mix">
-							<div className="single-img">
-								<img src="/assets/images/project/4.png" alt="Image" />
-								<div className="opacity">
-									<div className="border-shape"><div><div>
-										<h6><a href="#">Project Details</a></h6>
-										<ul>
-											<li>Presentational web pages</li>
-											<li>Bots /</li>
-											<li>Admin Apps /</li>
-											<li>Card Web Pages</li>
-										</ul></div></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						{/* <div className="mix">
-							<div className="single-img">
-								<img src="/assets/images/project/5.png" alt="Image" />
-								<div className="opacity">
-									<div className="border-shape"><div><div>
-										<h6><a href="#">Project Details</a></h6>
-										<ul>
-											<li>Business /</li>
-											<li>Service /</li>
-											<li>Product /</li>
-											<li>Template</li>
-										</ul></div></div>
-									</div>
-								</div>
-							</div>
-						</div> */}
-
-						<div className="mix">
-							<div className="single-img">
-								<img src="/assets/images/project/6.png" alt="Image" />
-								<div className="opacity">
-									<div className="border-shape"><div><div>
-										<h6><a href="#">Project Details</a></h6>
-										<ul>
-											<li>Extensions /</li>
-											<li>Presentational web pages</li>
-											<li>Bots /</li>
-											<li>Admin Apps /</li>
-											<li>Card Web Pages</li>
-										</ul></div></div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
+					<Gallery photos={this.getProjectsPictures()} onClick={this.openLightbox} />
+					<Lightbox images={this.getProjectsPictures()}
+						onClose={this.closeLightbox}
+						onClickPrev={this.gotoPrevious}
+						onClickNext={this.gotoNext}
+						currentImage={this.state.currentImage}
+						isOpen={this.state.lightboxIsOpen} />
 				</div>
 			</div>
         );

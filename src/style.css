@@ -152,9 +152,14 @@ animation-delay: .8s;
 .nav-link {
   font-size: 16px;
   font-weight: 500;
+  color: #ffffffe0;
   cursor: pointer;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffffe0;
 }
 
  h1,h2,h3,h4,h5,h6,p,ul { margin:0;padding: 0;}
@@ -437,9 +442,12 @@ animation-delay: .8s;
   border-width: 1px;
   margin-top:22px;
 }
-#about-us .single-about-content a.more:hover,
+#about-us .single-about-content a.more:hover {
+  color: #d73e4d;
+}
+
 #about-us .single-about-content:hover .icon {
-  color:#fff;
+  color: #fff;
 }
 /*** 
 
@@ -1617,4 +1625,17 @@ footer p {
 
 footer img {
   width: 100px;
+}
+
+.nav-item {
+  border: 1px solid rgb(228, 228, 228);
+  margin-right: 0.5rem;
+}
+
+.nav-item:hover {
+  background-color: #efededcf;
+  border: 1px solid rgb(75, 74, 74);
+}
+.nav-item:hover .nav-link {
+  color: rgb(75, 74, 74) !important;
 }
